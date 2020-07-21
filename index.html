@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -49,6 +49,17 @@
     </div>
     <!-- FIN NAVEEGADOR -->
 
+    <!-- NAVEGADOR 2 -->
+    <div class="container-fluid">
+      <nav class="nav">
+        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </nav>
+    </div>
+    <!-- FIN NAVEGADOR 2 -->
+    <!--  -->
     <!-- INICIO SLIDER FONDO RECTANGULAR INICIAL SLIDER ES LA CLASE CREADA EN LA PARTE DEL HEADER -->
       <div class="container-fluid slider text-white d-flex flex-column justify-content-center align-items-center">
           <div class="text-center">
@@ -56,16 +67,31 @@
             <h1 class="display">Lorem, ipsum dolor.</h1>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           </div>
-
-          <form action="" class="form-inline d-flex flex-column flex-sm-row">
-            <div class="form-group mr-2"> <!-- clase de formulario -->
+      <!-- FORMULARIO -->
+          <!-- <form action="" class="form-inline d-flex flex-column flex-sm-row">
+            <div class="form-group mr-2"> 
                 <input type="text" placeholder="no se que" class="form-control">
             </div>
-            <div class="form-group mr-3"> <!-- clase de formulario -->
+            <div class="form-group mr-3"> 
               <input type="submit" class="btn btn-danger" value="Enviar">
           </div>
-          </form>
+          </form> -->
+      <!-- END FORMULARIO -->
+          <form action="" class="form-inline d-flex flex-column flex-sm-row"> 
+            <div class="form-group my-2">
+                <label for="" class="mx-3 ">Nombre</label>
+                <input type="text" placeholder="Tu Nombre" class="form-control"> <!-- form-control muestra el contenido al 100% -->
+            </div>
 
+            <div class="form-group my-2">
+                <label for="" class="mx-3">Apellido</label>
+                <input type="text" placeholder="Tu Apellido" class="form-control"> 
+            </div>
+
+            <div class="form-group my-3 ml-3">
+                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="click en botoom">Enviar</button>
+            </div>
+        </form>
       </div>
 
     <!-- FIN SLIDER -->
@@ -79,36 +105,121 @@
 
         <div class="row"> <!-- DIVIDIR EN COLUMNAS LA PAGINA -->
             <!-- ARTICULOS --> 
-            <div class="col-9"> <!-- COLUMNAS 9/12 -->
-                <div class="row"> <!-- sub columnas siempre de 12  -->
-                    <div class="col-3">
-                      <img src="img/1.jpg" alt="" class="img-fluid">
-                      <p class="lead text-center">Fecha</p>
+                <!-- en vista movil ocupara las 12 colum y en Escritorio solo 9 colum -->
+            <div class="col-12 col-md-9"> <!-- COLUMNAS 9/12 -->
+              <!-- 1er ARTICULO -->
+                  <div class="row mb-4"> <!-- sub columnas siempre de 12  -->
+                      <div class="col-3">
+                        <img src="img/1.jpg" alt="" class="img-fluid">
+                        <p class="lead text-center">Fecha</p>
+                      </div>
+                      <div class="col-9">
+                        <a href="#"><h3>Lorem ipsum dolor sit amet.</h3></a>
+                        <!-- Badges -->
+                        <a href="#"></a>  <span class="badge badge-primary">Primary</span></a>
+                        <a href="#"></a>  <span class="badge badge-success">Success</span></a>
+                        <!-- End Badges -->
+                        <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ut ullam corrupti, quibusdam dolorem vitae eum maxime alias quasi odio esse inventore rerum vel aspernatur optio doloribus consectetur nam minus!</p>
+                        <!-- boton -->
+                        <a href="#" class="btn btn-warning ">Leer Mas</a>
+                      </div>
                     </div>
-                    <div class="col-9">
-                      <a href="#"><h3>Lorem ipsum dolor sit amet.</h3></a>
-                      <!-- Badges -->
-                      <a href="#"></a>  <span class="badge badge-primary">Primary</span></a>
-                      <a href="#"></a>  <span class="badge badge-success">Success</span></a>
-                      <!-- End Badges -->
-                      <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ut ullam corrupti, quibusdam dolorem vitae eum maxime alias quasi odio esse inventore rerum vel aspernatur optio doloribus consectetur nam minus!</p>
-                      <!-- boton -->
-                      <a href="#" class="btn btn-warning ">Leer Mas</a>
-                    </div>
-                   
-                </div>
+                <!-- FIN 1er ARTICULO -->
 
+                 <!-- 2do ARTICULO -->
+                 <div class="row mb-4"> <!-- sub columnas siempre de 12  -->
+                  <div class="col-3">
+                    <img src="img/2.jpg" alt="" class="img-fluid">
+                    <p class="lead text-center">Fecha</p>
+                  </div>
+                  <div class="col-9">
+                    <a href="#"><h3>Lorem ipsum dolor sit amet.</h3></a>
+                    <!-- Badges -->
+                    <a href="#"></a>  <span class="badge badge-primary">Primary</span></a>
+                    <a href="#"></a>  <span class="badge badge-success">Success</span></a>
+                    <!-- End Badges -->
+                    <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ut ullam corrupti, quibusdam dolorem vitae eum maxime alias quasi odio esse inventore rerum vel aspernatur optio doloribus consectetur nam minus!</p>
+                    <!-- boton -->
+                    <a href="#" class="btn btn-warning ">Leer Mas</a>
+                  </div>
+                </div>
+            <!-- FIN 2do ARTICULO -->
+
+             <!-- 3er ARTICULO -->
+             <div class="row mb-4"> <!-- sub columnas siempre de 12  -->
+              <div class="col-3">
+                <img src="img/3.jpg" alt="" class="img-fluid">
+                <p class="lead text-center">Fecha</p>
+              </div>
+              <div class="col-9">
+                <a href="#"><h3>Lorem ipsum dolor sit amet.</h3></a>
+                <!-- Badges -->
+                <a href="#"></a>  <span class="badge badge-primary">Primary</span></a>
+                <a href="#"></a>  <span class="badge badge-success">Success</span></a>
+                <!-- End Badges -->
+                <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ut ullam corrupti, quibusdam dolorem vitae eum maxime alias quasi odio esse inventore rerum vel aspernatur optio doloribus consectetur nam minus!</p>
+                <!-- boton -->
+                <a href="#" class="btn btn-warning ">Leer Mas</a>
+              </div>
             </div>
+        <!-- FIN 3er ARTICULO -->
+
             <!-- FIN ARTICULOS -->
 
-            <!-- ASIDE --> 
-            <div class="col-3"> <!-- COLUMNAS 3/12 -->
-
+            <!-- Button group MENU MUMERO -->
+            <div class="btn-toolbar d-flex justify-content-center " role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group mr-2 mb-3" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary active">Inicio</button>
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+                <button type="button" class="btn btn-secondary active">Final</button>
+                
+              </div>
             </div>
+          <!-- END MENU NUMEROS-->
+            </div> <!-- FIN COLUMNAS 9/12 -->
+    
+
+
+            <!-- ASIDE --> 
+                 <!-- en vista movil ocupara las 12 colum y en Escritorio solo 3 colum -->
+              <div class="col-12 col-md-3 text-center"> <!-- COLUMNAS 3/12 -->
+                  <!-- CARDS -->
+                  <div class="card text-white bg-primary mb-3 mx-auto" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Primary card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-secondary mb-3 mx-auto" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Secondary card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-success mb-3 mx-auto" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Success card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <!-- END CARDS -->
+              </div>
             <!-- FIN ASIDE -->
-        </div>
+        </div> <!-- FIN COLUMNA TOTAL -->
       </div>
       <!-- FIN MAIN -->
+
+      <!-- FOOTER -->
+        <footer class="container-fluid bg-dark text-white py-3">
+          <p class=" lead text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptatem!</p>
+        </footer>
+      <!-- END FOOTER -->
 
 
 
